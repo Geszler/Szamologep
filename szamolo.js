@@ -1,6 +1,4 @@
-const szamologep = document.getElementById("szamologep");
 const kimenet = document.getElementById("kimenet");
-const bemenet = document.getElementById("bemenet");
 
 function gombok(kiiras) {
     kimenet.value += kiiras;
@@ -12,9 +10,17 @@ function torles() {
 
 function vegeredmeny() {
     try{
-        kimenet.value = eval(kimenet.value);
+        kimenet.value = eval(kimenet.value); 
     }   
     catch(error){
         kimenet.value = "Hiba";
     }     
+}
+
+function gyok() {
+    try {
+        kimenet.value = Math.sqrt(eval(kimenet.value)); 
+    } catch (error) {
+        kimenet.value = "Hiba";
+    }
 }
