@@ -24,3 +24,10 @@ function gyok() {
         kimenet.value = "Hiba";
     }
 }
+function negyzet() {
+    try {
+        kimenet.value = Math.pow(eval(kimenet.value), 2);
+    } catch (error) {
+        kimenet.value = "Hiba";
+    }
+}
